@@ -1,4 +1,7 @@
-import java.util.Scanner;import java.util.Queue;import java.util.LinkedList;import java.util.List;
+import java.util.Scanner;
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.List;
 
 class Main {
   public static int HCF(int a, int b) {
