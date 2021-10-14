@@ -6,17 +6,19 @@ class Main {
     Queue<Integer> r = new LinkedList<>();
     Queue<Integer> s = new LinkedList<>(List.of(1, 0));
     Queue<Integer> t = new LinkedList<>(List.of(0, 1));
-    int i=0;
+    //int i=0;
     while (b != 0) {
       int x = b;
       b = a % b;
-      int r = b;
-      r.add(r);
-      if (b != 0) {int quot = a / b;q.add(q);}
+      int rema = b;
+      r.add(rema);
+      if (b != 0) {int quot = a / b;q.add(quot);}
       a = x;
-      s.add(s.poll()-q.peek());
-      i++;
+      s.add(s.remove()-q.peek()*s.peek());
+      t.add(t.remove()-q.peek()*t.peek());
+      //i++;
     }
+    System.out.println(s.poll() + " " + t.poll());
     return a;
   }
   public static void main(String[] args) {
