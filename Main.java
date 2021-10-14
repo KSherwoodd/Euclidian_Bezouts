@@ -18,6 +18,7 @@ class Main {
       /*System.out.println();
       System.out.println(quot + " " + s.peek() + " " + t.peek());*/
     }
+    System.out.println(s.peek() + " " + t.peek());
     return a;
   }
   public static void main(String[] args) {
