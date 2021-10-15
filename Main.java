@@ -18,15 +18,19 @@ class Main {
       /*System.out.println();
       System.out.println(quot + " " + s.peek() + " " + t.peek());*/
     }
+    System.out.println("\nBezout's Identity: ");
     System.out.println(s.peek() + " " + t.peek());
     return a;
   }
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.println("A and B: ");
+    System.out.println("A: ");
     int a = input.nextInt();
+    System.out.println("B: ");
     int b = input.nextInt();
-    System.out.println(HCF(a, b));
-    input.close();
+    input.close();    
+    int hcf = HCF(a, b);
+    System.out.println("\nHighest Common Factor: ");
+    System.out.println(hcf);
   }
 }
