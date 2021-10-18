@@ -4,7 +4,12 @@ import java.util.LinkedList;
 import java.util.List;
 
 class Main {
-  public static int HCF(int[][] a, int[][] b) {
+
+  public static int[][] Poly_Remainder(int[][] a, int[][] b) {
+    
+  }
+
+  public static int[][] HCF(int[][] a, int[][] b) {
     Queue<Integer> s = new LinkedList<>(List.of(1, 0));
     Queue<Integer> t = new LinkedList<>(List.of(0, 1));
     int quot=0;
