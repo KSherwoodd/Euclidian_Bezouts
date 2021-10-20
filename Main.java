@@ -9,10 +9,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 class Main {
-
   public static int[] poly_remainder(int[] a, int[] b) {
-    for (int i : b) {
-
+    Queue<Integer> remainder = new LinkedList<>();
+    int highest = b[0];
+    for (int i;i<b.length;i++) {b[i]*=-1;}
+    int coef = 1;
+    for (int i : a) {
+      if (i != highest) {
+        remainder.add((double) a[coef]/highest);
+        
+      }
     }
   }
 
